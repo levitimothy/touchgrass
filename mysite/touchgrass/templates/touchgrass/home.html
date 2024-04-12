@@ -1,0 +1,24 @@
+{% extends 'touchgrass/base.html' %}
+{% block body %}
+<h1>Home Page</h1>
+{% if user.is_authenticated %}
+    {% for post in post %}
+        <div class="row" style="padding-bottom: 10px">
+            <div class="col-md-4">
+                <h3>{{ post.username }}</h3>
+            </div>
+            {% if post.image != 'n/a' %}
+            <div class="col-md-3 offset-md-2">
+                <img id="main" class="card" style="max-height: 150px" height="150px" src="{{ post.image }}"  alt="image"/>
+            </div>
+            {% endif %}
+            <div class="col-md-2">
+                <p>{{ post.post }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+<h3>Please log in to see content</h3>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'touchgrass/base.html' %}
+{% block body %}
+<h2>New Post</h2>
+<p>If you do not have an image url type 'n/a'</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}

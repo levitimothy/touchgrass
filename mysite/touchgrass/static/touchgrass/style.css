@@ -1,0 +1,45 @@
+html,body{
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 99vh;
+    color: white;
+    border: darkgrey double;
+}
+
+html{
+    overflow: hidden;
+}
+
+p{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+/*h1{*/
+/*    text-align: center;*/
+/*    padding: 25px;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*img#main{*/
+/*    max-width: 150px;*/
+/*    max-height: 150px;*/
+/*}*/
+
+/*img#desc{*/
+/*    max-width: 300px;*/
+/*    max-height: 300px;*/
+/*}*/
+
+a{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
